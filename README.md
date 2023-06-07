@@ -3,39 +3,39 @@
 This repo accompanies our survey paper:
 
 #### Advancements in Gene Expression Prediction: Methods, Applications, and Future Directions
-*Mahdieh Labani, Amin Behehsti, Tracy O’brien, Simon Carlile, Andisheh Partovi*
 
 We list tools, algorithms, data for this area. Feel free to make a pull request for new resources.
 
 ---- 
 
-The gene expression prediction model is an AI question. Like any research question, we need to follow three main steps: data preparation, data modelling, and data evaluation. The first step in building a predictive model is to gather all the input data that can be used to inform smarter predictive models. An AI model learns the association between the observed data points and the labels using input features and biological labels from input data. In this case, the input data is the information in the genome. Numerous sequence areas, including genes, promoters, enhancers, and binding sites for regulatory proteins and RNAs, can be found in the genome. However, the main question is which sequence can be beneficial for achieving better performance. Choosing the relevant and adequate input data is critical for providing an efficient and accurate AI model. The survey is organised as follows. 
+## Table of Contents
+- [Gene Expression prediction](#Gene-Expression-prediction)
++ [Data Preparartion](#Data-Preparartion)
++ [Data Modeling](#Data-Modeling)
+    * [First group: Genomic Sequence](#First-group--Genomic-Sequence)
+    * [Second group: Histone marks](#Second-group--Histone-marks)
+    * [Third group: Transcription factor binding sites](#Third-group--Transcription-factor-binding-sites)
+    * [Fourth group: DNase I hypersensitive measurements](#Fourth-group--DNase-I-hypersensitive-measurements)
+    * [Fifth group: Massively Parallel Reporter Assay (MPRAs)](#Fifth-group--Massively-Parallel-Reporter-Assay-(MPRAs))
++ [Data Modeling](#Data-Modeling)
+- [Author Info](#author-info)
+- [Acknowledgements](#Acknowledgements)
+     
+## Gene Expression prediction
+
+The gene expression prediction model is an AI question. Like any research question, we need to follow three main steps: data preparation, data modelling, and data evaluation. The first step in building a predictive model is to gather all the input data that can be used to inform smarter predictive models. An AI model learns the association between the observed data points and the labels using input features and biological labels from input data. In this case, the input data is the information in the genome. Numerous sequence areas, including genes, promoters, enhancers, and binding sites for regulatory proteins and RNAs, can be found in the genome. However, the main question is which sequence can be beneficial for achieving better performance. Choosing the relevant and adequate input data is critical for providing an efficient and accurate AI model. The survey is organized as follows. 
 
 ![alt text](https://github.com/mahdieh1/GeneExpression-Prediction-Resources/blob/main/Figures/Fig1.jpg)
 
----------------------------------------------------------------------------------------------------------------------------
-
-## Table of Contents
-
-* [Data Preparartion](#Data-Preparartion)
-* [Data Modeling](#Data-Modeling)
-    - [First group: Genomic Sequence](#First-group--Genomic-Sequence)
-    - [Second group: Histone marks](#Second-group--Histone-marks)
-    - [Third group: Transcription factor binding sites](#Third-group--Transcription-factor-binding-sites)
-    - [Fourth group: DNase I hypersensitive measurements](#Fourth-group--DNase-I-hypersensitive-measurements)
-    - [Fifth group: Massively Parallel Reporter Assay (MPRAs)](#Fifth-group--Massively-Parallel-Reporter-Assay-(MPRAs))
-* [Data Modeling](#Data-Modeling)
-* [Author Info](#author-info)
-* [Acknowledgements](#Acknowledgements)
-     
-------------------------------------------------------------------------------------------------------------------------
 ## Data Preparartion
 
-Gene expression is a highly regulated process that involves the conversion of genetic information stored in DNA into functional gene products, such as proteins or RNA molecules. The complex interplay of various factors influences gene expression, and understanding these dynamics is crucial for understanding the underlying mechanisms. Gene expression prediction models categorised into five groups based on these input factors including genomic sequence, histone marks, transcription factors, DNase I hypersensitivity measurements, and MPRA.
+Gene expression is a highly regulated process that involves the conversion of genetic information stored in DNA into functional gene products, such as proteins or RNA molecules. The complex interplay of various factors influences gene expression, and understanding these dynamics is crucial for understanding the underlying mechanisms. Gene expression prediction models are categorized into five groups based on these input factors including genomic sequence, histone marks, transcription factors, DNase I hypersensitivity measurements, and MPRA.
 
 ![alt text](https://github.com/mahdieh1/GeneExpression-Prediction-Resources/blob/main/Figures/Figure2-new.jpg)
 
-### First group: Genomic Sequence 
+## Data Modelling
+
+#### First group: Genomic Sequence 
 
 | Method | Year | Availability of code | 	AI/ML models | Upstream | Downstream | Performance measure |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
@@ -50,7 +50,7 @@ Gene expression is a highly regulated process that involves the conversion of ge
 | Pipoli, V., et al., Predicting gene expression levels from DNA sequences and post-transcriptional information with transformers. Computer Methods and Programs in Biomedicine, 2022. 225: p. 107035. | 2022 | https://github.com/geneexpressionpolito/Predicting-gene-expression-levels-from-DNA-sequences-and-post-transcriptional-info-with-transformers | Transformer model & DeepLncLoc	| 10kbp	| - |	R2 = 0.764 |
 
 
-### Second group: Histone marks 
+#### Second group: Histone marks 
 
 | Method | Year | Availability of code | 	AI/ML models | Upstream | Downstream | Performance measure |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
@@ -64,20 +64,20 @@ Gene expression is a highly regulated process that involves the conversion of ge
 | Singh, R., et al., Attend and predict: Understanding gene regulation by selective attention on chromatin. Advances in neural information processing systems, 2017. 30. | 2017	| https://github.com/QData/AttentiveChrome | LSTM	| 5kbp |	5kbp |	F1 score = 0.56 |
 | Sekhon, A., R. Singh, and Y. Qi, DeepDiff: DEEP-learning for predicting DIFFerential gene expression from histone modifications. Bioinformatics, 2018. 34(17): p. i891-i900. | 2018 |	https://github.com/QData/DeepDiffChrome | LSTM |	5kbp |	5kbp |	F1 score = 0.6 |
 
-### Third group: Transcription factor binding sites 
+#### Third group: Transcription factor binding sites 
 
 | Method | Year | Availability of code | AI/ML models | Upstream | Downstream | Performance measure |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | Ouyang, Z., Q. Zhou, and W.H. Wong, ChIP-Seq of transcription factors predicts absolute and differential gene expression in embryonic stem cells. Proceedings of the National Academy of Sciences, 2009. 106(51): p. 21521-21526. | 2009 | - |	PCA | 500 bps for E2f1 and 5,000 bps for other TFs |  | 	R2 = 0.650 |
 | Schmidt, F., et al., Combining transcription factor binding affinities with open-chromatin data for accurate gene expression prediction. Nucleic acids research, 2017. 45(1): p. 54-66. | 2017 | www.github.de/schulzlab/TEPIC | Elastic net regression | 3kbp and 5Kbp | | Mean test correlation = 0.68 |
 
-### Fourth group: DNase I hypersensitive measurements 
+#### Fourth group: DNase I hypersensitive measurements 
 
 | Method | Year | Availability of code | AI/ML models | Upstream | Downstream | Performance measure |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Duren, Z., et al., Modeling gene regulation from paired expression and chromatin accessibility data. Proceedings of the National Academy of Sciences, 2017. 114(25): p. E4914-E4923. | 2017 | - | Statistical model | 1Mbp | 1Mbp | AUC = 0.946 |
 
-### Sixth group: Combinationorial inputs
+#### Sixth group: Combinationorial inputs
 
 | Method | Year | Availability of code | AI/ML models | Upstream | Downstream | Performance measure |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -85,4 +85,10 @@ Gene expression is a highly regulated process that involves the conversion of ge
 | Dong, X., et al., Modeling gene expression using chromatin features in various cellular contexts. Genome biology, 2012. 13(9): p. 1-17. | 2012 |	- | RF | 2kbp |	2kbp |	PCC = 0.71 |
 | McLeay, R.C., et al., Genome-wide in silico prediction of gene expression. Bioinformatics, 2012. 28(21): p. 2789-2796. | 2012 |	http://research.imb.uq.edu.au/t.bailey/supplementary_data/McLeay2011a | LR| For measuring histone modifications and chromatin accessibility: ± 2kbp around TSS, and 500 bps for E2f1 and 5,000 bps for other TFs. | | 	R2 = 0.66 |
 | Zhou, J., et al., Deep learning sequence-based ab initio prediction of variant effects on expression and disease risk. Nature genetics, 2018. 50(8): p. 1171-1179. | 2018 |	https://github.com/FunctionLab/ExPecto | CNN & LR |	20kbp |	20kbp |	SCC = 0.821 |
+
+## Author Info
+
+## Acknowledgment
+This work was funded by [Centre for Applied Artificial Intelligence](https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/centre-for-applied-artificial-intelligence), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship. 
+
 
