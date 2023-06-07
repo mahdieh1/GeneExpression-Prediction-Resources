@@ -65,17 +65,21 @@ Gene expression is a highly regulated process that involves the conversion of ge
 | Sekhon, A., R. Singh, and Y. Qi, DeepDiff: DEEP-learning for predicting DIFFerential gene expression from histone modifications. Bioinformatics, 2018. 34(17): p. i891-i900. | 2018 |	https://github.com/QData/DeepDiffChrome | LSTM |	5kbp |	5kbp |	F1 score = 0.6 |
 
 ### Third group: Transcription factor binding sites 
-| Method | Year | Availability of code | 	AI/ML models | Upstream | Downstream | Performance measure |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 
-TFAS[46]
-2009	-	PCA	500 bps for E2f1 and 5,000 bps for other TFs	R2 = 0.650
-TEPIC[45]
-2017	www.github.de/schulzlab/TEPIC
-Elastic net regression
-	3kbp and 5Kbp	Mean test correlation = 0.68
+| Method | Year | Availability of code | AI/ML models | Upstream | Downstream | Performance measure |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
+| TFAS[46] | 2009 | - |	PCA | 500 bps for E2f1 and 5,000 bps for other TFs |  | 	R2 = 0.650 |
+| TEPIC[45] | 2017 | www.github.de/schulzlab/TEPIC | Elastic net regression | 3kbp and 5Kbp | | Mean test correlation = 0.68 |
 
 ### Fourth group: DNase I hypersensitive measurements 
+
+| Method | Year | Availability of code | AI/ML models | Upstream | Downstream | Performance measure |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| PECA[49] | 2017 | - | Statistical model | 1Mbp | 1Mbp | AUC = 0.946 |
+
 ### Fifth group: Massively Parallel Reporter Assay (MPRAs) 
+
+| Method | Year | Availability of code | AI/ML models | Upstream | Downstream | Performance measure |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 
 
