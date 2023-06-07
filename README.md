@@ -68,18 +68,21 @@ Gene expression is a highly regulated process that involves the conversion of ge
 
 | Method | Year | Availability of code | AI/ML models | Upstream | Downstream | Performance measure |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| TFAS[46] | 2009 | - |	PCA | 500 bps for E2f1 and 5,000 bps for other TFs |  | 	R2 = 0.650 |
-| TEPIC[45] | 2017 | www.github.de/schulzlab/TEPIC | Elastic net regression | 3kbp and 5Kbp | | Mean test correlation = 0.68 |
+| Ouyang, Z., Q. Zhou, and W.H. Wong, ChIP-Seq of transcription factors predicts absolute and differential gene expression in embryonic stem cells. Proceedings of the National Academy of Sciences, 2009. 106(51): p. 21521-21526. | 2009 | - |	PCA | 500 bps for E2f1 and 5,000 bps for other TFs |  | 	R2 = 0.650 |
+| Schmidt, F., et al., Combining transcription factor binding affinities with open-chromatin data for accurate gene expression prediction. Nucleic acids research, 2017. 45(1): p. 54-66. | 2017 | www.github.de/schulzlab/TEPIC | Elastic net regression | 3kbp and 5Kbp | | Mean test correlation = 0.68 |
 
 ### Fourth group: DNase I hypersensitive measurements 
 
 | Method | Year | Availability of code | AI/ML models | Upstream | Downstream | Performance measure |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| PECA[49] | 2017 | - | Statistical model | 1Mbp | 1Mbp | AUC = 0.946 |
+| Duren, Z., et al., Modeling gene regulation from paired expression and chromatin accessibility data. Proceedings of the National Academy of Sciences, 2017. 114(25): p. E4914-E4923. | 2017 | - | Statistical model | 1Mbp | 1Mbp | AUC = 0.946 |
 
-### Fifth group: Massively Parallel Reporter Assay (MPRAs) 
+### Sixth group: Combinationorial inputs
 
 | Method | Year | Availability of code | AI/ML models | Upstream | Downstream | Performance measure |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-
+| Cheng, C., et al., A statistical framework for modeling gene expression using chromatin features and application to modENCODE datasets. Genome biology, 2011. 12(2): p. 1-18. | 2011 |	http://archive.gersteinlab.org/proj/chromodel/index.html | SVR & SVM |	4kbp |	4kbp |	PCC = 0.75 |
+| Dong, X., et al., Modeling gene expression using chromatin features in various cellular contexts. Genome biology, 2012. 13(9): p. 1-17. | 2012 |	- | RF | 2kbp |	2kbp |	PCC = 0.71 |
+| McLeay, R.C., et al., Genome-wide in silico prediction of gene expression. Bioinformatics, 2012. 28(21): p. 2789-2796. | 2012 |	http://research.imb.uq.edu.au/t.bailey/supplementary_data/McLeay2011a | LR| For measuring histone modifications and chromatin accessibility: ± 2kbp around TSS, and 500 bps for E2f1 and 5,000 bps for other TFs. | | 	R2 = 0.66 |
+| Zhou, J., et al., Deep learning sequence-based ab initio prediction of variant effects on expression and disease risk. Nature genetics, 2018. 50(8): p. 1171-1179. | 2018 |	https://github.com/FunctionLab/ExPecto | CNN & LR |	20kbp |	20kbp |	SCC = 0.821 |
 
