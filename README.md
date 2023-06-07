@@ -17,7 +17,7 @@ We list tools, algorithms, data for this area. Feel free to make a pull request 
     * [Third group: Transcription factor binding sites](#Third-group--Transcription-factor-binding-sites)
     * [Fourth group: DNase I hypersensitive measurements](#Fourth-group--DNase-I-hypersensitive-measurements)
     * [Fifth group: Massively Parallel Reporter Assay (MPRAs)](#Fifth-group--Massively-Parallel-Reporter-Assay-(MPRAs))
-+ [Data Modeling](#Data-Modeling)
++ [Data Evaluation](#Data-Evaluation)
 - [Author Info](#author-info)
 - [Acknowledgements](#Acknowledgements)
      
