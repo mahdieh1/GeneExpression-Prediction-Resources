@@ -88,8 +88,8 @@ Gene expression is a highly regulated process that involves the conversion of ge
 
 ## Author Info
 
-Mahdieh Labani
-Amin Behehsti
+* [Mahdieh Labani](https://scholar.google.com/citations?user=O8mwjn0AAAAJ&hl=en)
+* [Amin Behehsti](https://scholar.google.com.au/citations?user=Uw1OLAgAAAAJ&hl=en)
 
 ## Acknowledgment
 This work was funded by [Centre for Applied Artificial Intelligence](https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/centre-for-applied-artificial-intelligence), and Macquarie PhD Scholarship.
